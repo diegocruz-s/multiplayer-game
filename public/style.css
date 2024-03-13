@@ -1,0 +1,113 @@
+html {
+  font-family: sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(31, 31, 31), #000000);
+  display: flex;
+  flex-direction: column;
+  padding: 10em 0 0 0;
+  align-items: center;
+}
+#roomOptions {
+  display: none;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  margin-top: 3em;
+}
+#roomOptions input {
+  padding: 1em;
+  border-radius: .5em;
+  margin-bottom: 1em;
+  border: 2px solid #fff;
+  background-color: transparent;
+  font-size: .9em;
+  color: #fff;
+  font-weight: bold;
+}
+#roomOptions input::placeholder {
+  color: #ddd;
+}
+#roomOptions input:focus {
+  outline: none;
+}
+
+h1 {
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
+  color: #0f0;
+  font-size: 5em;
+  margin-bottom: .3em;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+}
+.btns button {
+  width: 48%;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: .8em .5em;
+  border-radius: .5em;
+  border: 2px solid #00f;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btns button:hover {
+  background-color: #00f;
+}
+.btnsSendCancel {
+  display: flex;
+  width: 100%;
+  gap: .3em;
+}
+.btnsSendCancel button {
+  padding: .6em;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s all;
+  color: #fff;
+}
+.btnsSendCancel #submit {
+  flex: 1;
+  background-color: rgba(0, 255, 0, .8);
+}
+.btnsSendCancel #submit {
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+}
+.btnsSendCancel #submit:hover {
+  background-color: rgb(0, 255, 0);
+}
+.btnsSendCancel #removeRoomOptions {
+  width: 20%;
+  background-color: rgba(255, 0, 0, .8);
+}
+.btnsSendCancel #removeRoomOptions {
+  border-top-right-radius: .5em;
+  border-bottom-right-radius: .5em;
+}
+.btnsSendCancel #removeRoomOptions:hover {
+  background-color: rgb(255, 0, 0);
+}
+#container #error {
+  display: block;
+  color: #f00;
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 1.1em;
+  font-weight: bold;
+}

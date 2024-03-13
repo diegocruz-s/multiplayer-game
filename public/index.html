@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="container">
+    <h1>FrutaMania.io</h1>
+    <form id="formRoom" action="./game/game.html">
+      <div class="btns">
+        <button id="btnCreateRoom" type="button">Criar Nova Sala</button>
+        <button id="btnChooseIdRoom" type="button">Entrar em sala existente</button>
+      </div>
+      
+      <div id="roomOptions">
+        <input id="roomIdInput" type="text" placeholder="Definir ID da sala" />
+        <input id="roomUserNameInput" type="text" placeholder="Seu nome de usuário" />
+  
+        <div class="btnsSendCancel">
+          <button id="submit" type="submit">Enviar</button>
+          <button id="removeRoomOptions" type="button">X</button>
+        </div>
+
+        <div id="error">
+          <p id="textError"></p>
+        </div>
+      </div>
+  
+    </form>
+
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

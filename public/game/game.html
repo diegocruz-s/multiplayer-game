@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  
+    <div id="contentGame">
+      <div>
+
+        <canvas id="canvas" width="30" height="30"></canvas>
+        <div id="leader"></div>
+  
+        <div id="infosGame">
+          <input id="time_game" name="time_game" type="number" min="0" placeholder="Tempo de jogo(s)" />
+          <input id="generate_fruit" name="generate_fruit" type="number" min="0" placeholder="Geração das frutas(s)" />
+          <button id="start_game">Começar</button>
+        </div>
+      </div>
+
+      <div id="plate"></div>
+
+    </div>
+    
+  </div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../renderGame/renderGame.js"></script>
+  <script src="./game.js"></script>
+</body>
+</html>
